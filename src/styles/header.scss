@@ -1,0 +1,46 @@
+@import "colors";
+
+nav {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: $first;
+    top: 0%;
+    z-index: 10;
+
+
+    > h1{
+        text-transform: uppercase;
+        animation: textTrans 10s linear infinite alternate;
+        
+    }
+    >main{
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+
+        > a{
+            color: $dark;
+            margin: 1rem;
+
+
+            &:hover{
+                color:$third;
+            }
+        }
+    }
+}
+
+@keyframes textTrans {
+    
+        
+    0% { opacity: 0; transform: translateY(0); color: rgb(0, 167, 239)}
+    25% { opacity: 1; transform: translateY(0); color: rgb(153, 255, 0);}
+    75% { opacity: 1; transform: translateY(0); color: rgb(0, 0, 0);}
+    100% { opacity: 0; transform: translateY(0); color: rgb(39, 105, 105);}
+    
+}
